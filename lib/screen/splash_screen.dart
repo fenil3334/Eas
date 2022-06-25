@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'package:eastern_interview/screen/camera_app.dart';
+import 'package:eastern_interview/screen/camera_web_screen.dart';
 import 'package:eastern_interview/screen/home_activity.dart';
 import 'package:flutter/material.dart';
 
@@ -30,7 +32,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
       Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (context) => const HomeActivity()),
+        MaterialPageRoute(builder: (context) => MyApp()),
             (Route<dynamic> route) => false,
       );
 
@@ -46,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
       theme: ThemeData(
           primaryColor: Colors.blue
       ),
-      home: const HomeActivity(),
+      home:  HomeActivity(),
     );
 
 

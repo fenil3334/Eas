@@ -499,39 +499,52 @@ class _HomeScreenState extends State<HomeScreen> {
                                   width: double.infinity,
                                   height: SizeUtils.verticleSize * 6.5,
 
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                    children: [
-                                      Column(
-                                        children: [
-                                          Text(
-                                            designo.subName.toString(),
-                                            maxLines: 1,
-                                            overflow: TextOverflow.ellipsis,
-                                            style: TextStyle(
-                                                color: AppColor.black, fontSize: 12, fontWeight: FontWeight.w300),
-                                          ),
-                                          const SizedBox(
-                                            height: 5,
-                                          ),
-                                          Text(
-                                            Strings.collection,
-                                            maxLines: 1,
-                                            overflow: TextOverflow.ellipsis,
-                                            style: TextStyle(
-                                                color: AppColor.black, fontSize: 11, fontWeight: FontWeight.w300),
-                                          ),
-                                        ],
+
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(left: 10,right: 10),
+                                        child: Column(
+                                          mainAxisAlignment: MainAxisAlignment.center,
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              designo.subName.toString(),
+                                              maxLines: 1,
+                                              overflow: TextOverflow.ellipsis,
+                                              style: TextStyle(
+                                                  color: AppColor.black, fontSize: 12, fontWeight: FontWeight.w300),
+                                            ),
+                                            const SizedBox(
+                                              height: 5,
+                                            ),
+
+                                            Row(
+                                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                              children: [
+                                                Text(
+                                                  Strings.collection,
+                                                  maxLines: 1,
+                                                  overflow: TextOverflow.ellipsis,
+                                                  style: TextStyle(
+                                                      color: AppColor.black, fontSize: 11, fontWeight: FontWeight.w300),
+                                                ),
+
+
+                                                Text(
+                                                  designo.cta.toString(),
+                                                  maxLines: 1,
+                                                  overflow: TextOverflow.ellipsis,
+                                                  style:
+                                                  TextStyle(color: AppColor.black, fontSize: 9, fontWeight: FontWeight.w300),
+                                                )
+                                              ],
+                                            ),
+
+                                          ],
+                                        ),
                                       ),
-                                      Text(
-                                        designo.cta.toString(),
-                                        maxLines: 1,
-                                        overflow: TextOverflow.ellipsis,
-                                        style:
-                                            TextStyle(color: AppColor.black, fontSize: 9, fontWeight: FontWeight.w300),
-                                      ),
-                                    ],
-                                  ),
+
+
+
                                 ),
                               ),
                             ],
