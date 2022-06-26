@@ -22,8 +22,8 @@ class _MoreScreenState extends State<MoreScreen> {
   @override
   void initState() {
     super.initState();
-    genThumbnailFile();
-    _getImage();
+   // genThumbnailFile();
+  //  _getImage();
   }
   
   @override
@@ -35,7 +35,7 @@ class _MoreScreenState extends State<MoreScreen> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              videofile!=null ? Image.file(videofile!,height: 200,width: 200) : Image.asset(
+             /* videofile!=null ? Image.file(videofile!,height: 200,width: 200) : Image.asset(
                 widget.image,
                 height: SizeUtils.horizontalSize*8,
                 width: SizeUtils.horizontalSize*8,
@@ -43,8 +43,8 @@ class _MoreScreenState extends State<MoreScreen> {
 
 
               pathimage!=null ? Image.network(pathimage!) : Container(),
-
-              SizedBox(height: SizeUtils.verticleSize*1.4,),
+*/
+              SizedBox(height: 20),
 
               Text(widget.title,style: TextStyle(color: AppColor.black,fontSize: 14),),
             ],

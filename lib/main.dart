@@ -1,5 +1,6 @@
+
+
 import 'dart:io';
-import 'dart:typed_data';
 
 import 'package:camera/camera.dart';
 import 'package:eastern_interview/screen/splash_screen.dart';
@@ -8,8 +9,6 @@ import 'package:flutter/services.dart';
 import 'package:sms_otp_auto_verify/sms_otp_auto_verify.dart';
 
 void main() {
-
-
 
   runApp(const SplashScreen());
 /* runApp( MyApp());
@@ -23,8 +22,7 @@ void main() {
 
 
 /*
-
-Future<void> main() async {
+void main() async {
   // Ensure that plugin services are initialized so that `availableCameras()`
   // can be called before `runApp()`
   WidgetsFlutterBinding.ensureInitialized();

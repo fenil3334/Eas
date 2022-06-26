@@ -1,3 +1,4 @@
+/*
 import 'dart:html';
 import 'dart:typed_data';
 
@@ -74,7 +75,9 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-/* camera.dart */
+*/
+/* camera.dart *//*
+
 var initialized = false;
 
 final VideoElement video = VideoElement();
@@ -111,4 +114,4 @@ Uint8List takePic() {
   final data = canvas.toDataUrl('image/png');
   final uri = Uri.parse(data);
   return uri.data!.contentAsBytes();
-}
+}*/
